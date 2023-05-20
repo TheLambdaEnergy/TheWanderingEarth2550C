@@ -8,6 +8,11 @@
     src: url(../font/Rajdhani\ Medium.otf);
 }
 
+@font-face {
+    font-family: zh;
+    src: url(../font/zhno59-cch.ttf)
+}
+
 @keyframes flagshow{
     from{
         width:0%;
@@ -30,7 +35,7 @@
 body{
     background:#000;
     color:white;
-    font-family: rm;
+    font-family:rm, zh;
     overflow: hidden;
 }
 

@@ -40,7 +40,7 @@
         // $("#div_win_1").html("")
         $("#div_win_2").delay(600).fadeIn();
         $("#div_win_3").delay(900).fadeIn();
-        setTimeout( function(){$(".wp2").html("OS:550C Basic Operating System</br>Version:19.0.022.3<br>Credits:United Earth Government<br>\nCPU L1 Cache:76GB<br>\nGraphics Memory:24TB<br>\nGPU Maxmium Renderer:64x MSAA<br>\nDevice Attached:<br>\nUEG Drone Control<br>\nUEG IFF Checker<br>\nUEG IFF Defense System<br>\nUEG Space Elevator Control");
+        setTimeout( function(){$(".wp2").html("操作系统：550C底层</br>版本:19.0.022.3<br>所有者：地球联合政府<br>\nCPU L1缓存:76GB<br>\n图形化显存:24TB<br>\nGPU 最大渲染能力:64x MSAA<br>\n已挂载设备:<br>\n地球联合政府 无人及控制系统<br>\n地球联合政府 敌我识别系统<br>\n地球联合政府 主动防御<br>\n地球联合政府 太空电梯控制");
     },1000);
         $("#flag").click(function(){$("#flag").hide()})
 
@@ -70,7 +70,7 @@
       }
    };
    var title = {
-      text: 'Network Live Stream Data'   
+      text: '网络活动流量'   
    };   
    var xAxis = {
       type: 'datetime',
@@ -78,7 +78,7 @@
    };
    var yAxis = {
       title: {
-         text: 'Stream Bytes'
+         text: '字节'
       },
       plotLines: [{
          value: 0,
@@ -155,22 +155,22 @@
 </head>
 <body>
     <header>
-        <p style="font-size:x-large;color:orange;height: 1em;">SELF COMPILING SYSTEM</p>
+        <p style="font-size:x-large;color:orange;height: 1em;">自编译系统</p>
     </header>
     <div id="index_bar" class="nav navbar-nav" style="font-size: large;height: 17px;">
         <ul class="nav navbar-nav" style="height:17px;line-height: 17px;">
-            <li><a href="#">FILE</a></li>
-            <li><a href="#">EDIT</a></li>
-            <li><a href="#">VIEW</a></li>
-            <li><a href="#">PROJECT</a></li>
-            <li><a href="#">BUILD</a></li>
-            <li><a href="#">DEBUG</a></li>
-            <li><a href="#">TEAM</a></li>
-            <li><a href="#">TOOLS</a></li>
-            <li><a href="#">TEST</a></li>
-            <li class="activate"><a href="#">ANALYZE</a></li>
-            <li><a href="#">WINDOW</a></li>
-            <li><a href="#">HELP</a></li>
+            <li><a href="#">文件</a></li>
+            <li><a href="#">编辑</a></li>
+            <li><a href="#">预览</a></li>
+            <li><a href="#">项目</a></li>
+            <li><a href="#">构建</a></li>
+            <li><a href="#">调试</a></li>
+            <li><a href="#">组织</a></li>
+            <li><a href="#">工具</a></li>
+            <li><a href="#">测试</a></li>
+            <li class="activate"><a href="#">分析</a></li>
+            <li><a href="#">窗口</a></li>
+            <li><a href="#">帮助</a></li>
         </ul>
     </div>
     <nav class="nav navbar-nav"> <!--HEADER BAR-->
@@ -179,37 +179,37 @@
 
                 <li class="dropdown">
                     <a href="#" class="btn dropdown-toggle" id="dd_select" data-toggle="dropdown">
-                        LOCAL SYSTEM DEBUGGER
+                        本地系统调试器
                         <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">SELF COMPILING</a></li>
+                        <li><a href="#">自编译</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
                     <a href="#" class="btn dropdown-toggle" id="dd_select" data-toggle="dropdown" style="width:4em;">
-                        Auto
+                        自动
                         <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Speed Priority</a></li>
-                        <li><a href="#">Process Priority</a></li>
-                        <li><a href="#">Manual</a></li>
+                        <li><a href="#">速度优先</a></li>
+                        <li><a href="#">进程优先</a></li>
+                        <li><a href="#">手动</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
                     <a href="#" class="btn dropdown-toggle" id="dd_select" data-toggle="dropdown" style="width:4em;">
-                        Debug
+                        调试
                         <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Stop</a></li>
-                        <li><a href="#">Run</a></li>
+                        <li><a href="#">终止</a></li>
+                        <li><a href="#">运行</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
                     <a href="#" class="btn dropdown-toggle" id="dd_select" data-toggle="dropdown" style="width:4em;">
-                        Test
+                        测试
                         <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
@@ -219,12 +219,12 @@
 
                 <!-- <a class="btn dropdown-toggle" id="dd_select" data-toggle="dropdown">LOCAL SYSTEM DEBUGGER</a> -->
 
-                <button class="btn nav_btn">NETWORK</button>
-                <button class="btn nav_btn">NDCX</button>
-                <button class="btn nav_btn">DATE</button>
-                <input type="search" placeholder="Search" class="nav_search">
-                <button class="btn dropdown-toggle navbar-right" id="dd_select" data-toggle="dropdown" style="width:3em;">FRONT</button>
-                <button class="btn dropdown-toggle navbar-right" id="dd_select" data-toggle="dropdown" style="width:3em;">AFTER</button>
+                <button class="btn nav_btn">网络</button>
+                <button class="btn nav_btn">节点</button>
+                <button class="btn nav_btn">日期</button>
+                <input type="search" placeholder="搜索" class="nav_search">
+                <button class="btn dropdown-toggle navbar-right" id="dd_select" data-toggle="dropdown" style="width:3em;">往前</button>
+                <button class="btn dropdown-toggle navbar-right" id="dd_select" data-toggle="dropdown" style="width:3em;">往后</button>
             </li>
             <!-- <li>
                 <p id="p_date">2037-4-16</p>
@@ -236,7 +236,7 @@
     </nav>
     <div id="div_windowbg">
         <div id="div_win_1" class="window">
-            <div class="win_titlebar">NETWORK COMMANDLINE
+            <div class="win_titlebar">网络命令行
                 <button class="win_close_btn" onclick="$('#div_win_1').hide();">X</button>
             </div>
             <div class="win_page wp1" style="height: 100%;">
@@ -244,13 +244,13 @@
             </div>
         </div>
         <div id="div_win_2" class="window">
-            <div class="win_titlebar">DEVICE DETECTION
+            <div class="win_titlebar">设备探测
                 <button class="win_close_btn" onclick="$('#div_win_2').hide();">X</button>
             </div>
             <div class="win_page wp2" style="text-align: center;font-size: large;"></div>
         </div>
         <div id="div_win_3" class="window">
-            <div class="win_titlebar">BASIC OPERATING SYSTEM GENERATE
+            <div class="win_titlebar">底层操作系统生成
                 <button class="win_close_btn" onclick="$('#div_win_3').hide();">X</button>
             </div>
             <div class="win_page wp3">
@@ -260,7 +260,7 @@
     </div>
     <div id="flag">
         <p>
-        SYSTEM IS REWRITTEN
+        系统已覆写
         </p>
     </div>
 </body>
